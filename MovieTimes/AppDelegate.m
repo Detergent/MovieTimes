@@ -8,8 +8,8 @@
 
 #import "AppDelegate.h"
 #import "DownloadAssistant.h"
-#import "TheaterTableViewController.h"
-#import "TheaterDataSource.h"
+#import "TheatersTableViewController.h"
+#import "TheatersDataSource.h"
 
 @interface AppDelegate ()
 
@@ -20,7 +20,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    TheaterViewController *tvc = [[TheaterViewController alloc] init];
+    TheatersTableViewController *tvc = [[TheatersTableViewController alloc] init];
     UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:tvc];
     [self.window setRootViewController:nc];
     return YES;

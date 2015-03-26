@@ -7,8 +7,9 @@
 //
 //  Based on a modified version of TableViewBeyondBasics Provided by Dr. Ali Kooshesh
 
-#ifndef MovieTimes_TheaterTableViewController_h
-#define MovieTimes_TheaterTableViewController_h
+#import <UIKit/UIKit.h>
+#import "TheatersDataSource.h"
 
+@interface TheatersTableViewController : UITableViewController<DataSourceReadyForUseDelegate,UITableViewDelegate,UITableViewDataSource>
 
-#endif
+@end

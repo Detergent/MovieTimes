@@ -7,8 +7,23 @@
 //
 //  Based on a modified version of TableViewBeyondBasics Provided by Dr. Ali Kooshesh
 
-#ifndef MovieTimes_Theater_h
-#define MovieTimes_Theater_h
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+@interface Theater : NSObject
+
+-(void) addValue: (NSString *) attrVal forAttribute: (NSString *) attrName;
+-(NSString *) getValueForAttribute: (NSString *) attr;
+-(void) print;
+
+-(NSString *) title;
+-(UIImage *)  imageForListEntry;
+-(NSAttributedString *) theaterNameForListEntry;
+-(NSString *) imageNameForDetailedView;
+-(NSString *) htmlDescriptionForDetailedView;
+-(NSAttributedString *) descriptionForListEntry;
+-(id) initWithDictionary: (NSDictionary *) dictionary;
 
 
-#endif
+
+@end

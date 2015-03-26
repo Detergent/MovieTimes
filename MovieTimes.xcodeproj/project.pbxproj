@@ -16,8 +16,11 @@
 		D04C6AA81AC3C83700A9F7B0 /* MovieTimesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D04C6AA71AC3C83700A9F7B0 /* MovieTimesTests.m */; };
 		D04C6AB31AC3C87F00A9F7B0 /* DownloadAssistant.m in Sources */ = {isa = PBXBuildFile; fileRef = D04C6AB21AC3C87F00A9F7B0 /* DownloadAssistant.m */; };
 		D04C6AB61AC3C8DD00A9F7B0 /* Theater.m in Sources */ = {isa = PBXBuildFile; fileRef = D04C6AB51AC3C8DD00A9F7B0 /* Theater.m */; };
-		D04C6AB81AC3C92000A9F7B0 /* TheaterDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D04C6AB71AC3C92000A9F7B0 /* TheaterDataSource.m */; };
-		D04C6ABC1AC3C95500A9F7B0 /* TheaterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D04C6ABB1AC3C95500A9F7B0 /* TheaterTableViewController.m */; };
+		D04C6AB81AC3C92000A9F7B0 /* TheatersDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D04C6AB71AC3C92000A9F7B0 /* TheatersDataSource.m */; };
+		D04C6ABC1AC3C95500A9F7B0 /* TheatersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D04C6ABB1AC3C95500A9F7B0 /* TheatersTableViewController.m */; };
+		D04C6AC51AC3CE6600A9F7B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D04C6AC41AC3CE6600A9F7B0 /* Foundation.framework */; };
+		D04C6AC71AC3CE7300A9F7B0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D04C6AC61AC3CE7300A9F7B0 /* CoreGraphics.framework */; };
+		D04C6AC91AC3CE7C00A9F7B0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D04C6AC81AC3CE7C00A9F7B0 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,10 +51,13 @@
 		D04C6AB21AC3C87F00A9F7B0 /* DownloadAssistant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadAssistant.m; sourceTree = "<group>"; };
 		D04C6AB41AC3C8CB00A9F7B0 /* Theater.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Theater.h; sourceTree = "<group>"; };
 		D04C6AB51AC3C8DD00A9F7B0 /* Theater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theater.m; sourceTree = "<group>"; };
-		D04C6AB71AC3C92000A9F7B0 /* TheaterDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheaterDataSource.m; sourceTree = "<group>"; };
-		D04C6AB91AC3C93A00A9F7B0 /* TheaterDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheaterDataSource.h; sourceTree = "<group>"; };
-		D04C6ABA1AC3C94B00A9F7B0 /* TheaterTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheaterTableViewController.h; sourceTree = "<group>"; };
-		D04C6ABB1AC3C95500A9F7B0 /* TheaterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheaterTableViewController.m; sourceTree = "<group>"; };
+		D04C6AB71AC3C92000A9F7B0 /* TheatersDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheatersDataSource.m; sourceTree = "<group>"; };
+		D04C6AB91AC3C93A00A9F7B0 /* TheatersDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheatersDataSource.h; sourceTree = "<group>"; };
+		D04C6ABA1AC3C94B00A9F7B0 /* TheatersTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheatersTableViewController.h; sourceTree = "<group>"; };
+		D04C6ABB1AC3C95500A9F7B0 /* TheatersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheatersTableViewController.m; sourceTree = "<group>"; };
+		D04C6AC41AC3CE6600A9F7B0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D04C6AC61AC3CE7300A9F7B0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D04C6AC81AC3CE7C00A9F7B0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D04C6AC91AC3CE7C00A9F7B0 /* UIKit.framework in Frameworks */,
+				D04C6AC71AC3CE7300A9F7B0 /* CoreGraphics.framework in Frameworks */,
+				D04C6AC51AC3CE6600A9F7B0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +87,7 @@
 				D04C6A8A1AC3C83700A9F7B0 /* MovieTimes */,
 				D04C6AA41AC3C83700A9F7B0 /* MovieTimesTests */,
 				D04C6A891AC3C83700A9F7B0 /* Products */,
+				D04C6ACA1AC3CE9F00A9F7B0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,12 +105,11 @@
 			children = (
 				D04C6AB41AC3C8CB00A9F7B0 /* Theater.h */,
 				D04C6AB51AC3C8DD00A9F7B0 /* Theater.m */,
-				D04C6AB11AC3C87F00A9F7B0 /* DownloadAssistant.h */,
 				D04C6AB21AC3C87F00A9F7B0 /* DownloadAssistant.m */,
-				D04C6ABA1AC3C94B00A9F7B0 /* TheaterTableViewController.h */,
-				D04C6ABB1AC3C95500A9F7B0 /* TheaterTableViewController.m */,
-				D04C6AB91AC3C93A00A9F7B0 /* TheaterDataSource.h */,
-				D04C6AB71AC3C92000A9F7B0 /* TheaterDataSource.m */,
+				D04C6ABA1AC3C94B00A9F7B0 /* TheatersTableViewController.h */,
+				D04C6ABB1AC3C95500A9F7B0 /* TheatersTableViewController.m */,
+				D04C6AB91AC3C93A00A9F7B0 /* TheatersDataSource.h */,
+				D04C6AB71AC3C92000A9F7B0 /* TheatersDataSource.m */,
 				D04C6A8F1AC3C83700A9F7B0 /* AppDelegate.h */,
 				D04C6A901AC3C83700A9F7B0 /* AppDelegate.m */,
 				D04C6A921AC3C83700A9F7B0 /* ViewController.h */,
@@ -137,6 +146,18 @@
 				D04C6AA61AC3C83700A9F7B0 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D04C6ACA1AC3CE9F00A9F7B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D04C6AC81AC3CE7C00A9F7B0 /* UIKit.framework */,
+				D04C6AC61AC3CE7300A9F7B0 /* CoreGraphics.framework */,
+				D04C6AC41AC3CE6600A9F7B0 /* Foundation.framework */,
+				D04C6AB11AC3C87F00A9F7B0 /* DownloadAssistant.h */,
+			);
+			name = Frameworks;
+			path = MovieTimes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,9 +261,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D04C6AB31AC3C87F00A9F7B0 /* DownloadAssistant.m in Sources */,
-				D04C6ABC1AC3C95500A9F7B0 /* TheaterTableViewController.m in Sources */,
+				D04C6ABC1AC3C95500A9F7B0 /* TheatersTableViewController.m in Sources */,
 				D04C6A941AC3C83700A9F7B0 /* ViewController.m in Sources */,
-				D04C6AB81AC3C92000A9F7B0 /* TheaterDataSource.m in Sources */,
+				D04C6AB81AC3C92000A9F7B0 /* TheatersDataSource.m in Sources */,
 				D04C6A911AC3C83700A9F7B0 /* AppDelegate.m in Sources */,
 				D04C6A8E1AC3C83700A9F7B0 /* main.m in Sources */,
 				D04C6AB61AC3C8DD00A9F7B0 /* Theater.m in Sources */,
@@ -369,6 +390,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MovieTimes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -379,6 +404,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MovieTimes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
