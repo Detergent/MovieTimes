@@ -14,6 +14,10 @@
 		D04C6A991AC3C83700A9F7B0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D04C6A981AC3C83700A9F7B0 /* Images.xcassets */; };
 		D04C6A9C1AC3C83700A9F7B0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D04C6A9A1AC3C83700A9F7B0 /* LaunchScreen.xib */; };
 		D04C6AA81AC3C83700A9F7B0 /* MovieTimesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D04C6AA71AC3C83700A9F7B0 /* MovieTimesTests.m */; };
+		D04C6AB31AC3C87F00A9F7B0 /* DownloadAssistant.m in Sources */ = {isa = PBXBuildFile; fileRef = D04C6AB21AC3C87F00A9F7B0 /* DownloadAssistant.m */; };
+		D04C6AB61AC3C8DD00A9F7B0 /* Theater.m in Sources */ = {isa = PBXBuildFile; fileRef = D04C6AB51AC3C8DD00A9F7B0 /* Theater.m */; };
+		D04C6AB81AC3C92000A9F7B0 /* TheaterDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D04C6AB71AC3C92000A9F7B0 /* TheaterDataSource.m */; };
+		D04C6ABC1AC3C95500A9F7B0 /* TheaterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D04C6ABB1AC3C95500A9F7B0 /* TheaterTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,14 @@
 		D04C6AA11AC3C83700A9F7B0 /* MovieTimesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieTimesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D04C6AA61AC3C83700A9F7B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D04C6AA71AC3C83700A9F7B0 /* MovieTimesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieTimesTests.m; sourceTree = "<group>"; };
+		D04C6AB11AC3C87F00A9F7B0 /* DownloadAssistant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadAssistant.h; sourceTree = "<group>"; };
+		D04C6AB21AC3C87F00A9F7B0 /* DownloadAssistant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadAssistant.m; sourceTree = "<group>"; };
+		D04C6AB41AC3C8CB00A9F7B0 /* Theater.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Theater.h; sourceTree = "<group>"; };
+		D04C6AB51AC3C8DD00A9F7B0 /* Theater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theater.m; sourceTree = "<group>"; };
+		D04C6AB71AC3C92000A9F7B0 /* TheaterDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheaterDataSource.m; sourceTree = "<group>"; };
+		D04C6AB91AC3C93A00A9F7B0 /* TheaterDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheaterDataSource.h; sourceTree = "<group>"; };
+		D04C6ABA1AC3C94B00A9F7B0 /* TheaterTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheaterTableViewController.h; sourceTree = "<group>"; };
+		D04C6ABB1AC3C95500A9F7B0 /* TheaterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheaterTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +93,14 @@
 		D04C6A8A1AC3C83700A9F7B0 /* MovieTimes */ = {
 			isa = PBXGroup;
 			children = (
+				D04C6AB41AC3C8CB00A9F7B0 /* Theater.h */,
+				D04C6AB51AC3C8DD00A9F7B0 /* Theater.m */,
+				D04C6AB11AC3C87F00A9F7B0 /* DownloadAssistant.h */,
+				D04C6AB21AC3C87F00A9F7B0 /* DownloadAssistant.m */,
+				D04C6ABA1AC3C94B00A9F7B0 /* TheaterTableViewController.h */,
+				D04C6ABB1AC3C95500A9F7B0 /* TheaterTableViewController.m */,
+				D04C6AB91AC3C93A00A9F7B0 /* TheaterDataSource.h */,
+				D04C6AB71AC3C92000A9F7B0 /* TheaterDataSource.m */,
 				D04C6A8F1AC3C83700A9F7B0 /* AppDelegate.h */,
 				D04C6A901AC3C83700A9F7B0 /* AppDelegate.m */,
 				D04C6A921AC3C83700A9F7B0 /* ViewController.h */,
@@ -219,9 +239,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D04C6AB31AC3C87F00A9F7B0 /* DownloadAssistant.m in Sources */,
+				D04C6ABC1AC3C95500A9F7B0 /* TheaterTableViewController.m in Sources */,
 				D04C6A941AC3C83700A9F7B0 /* ViewController.m in Sources */,
+				D04C6AB81AC3C92000A9F7B0 /* TheaterDataSource.m in Sources */,
 				D04C6A911AC3C83700A9F7B0 /* AppDelegate.m in Sources */,
 				D04C6A8E1AC3C83700A9F7B0 /* main.m in Sources */,
+				D04C6AB61AC3C8DD00A9F7B0 /* Theater.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
