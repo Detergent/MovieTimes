@@ -9,6 +9,7 @@
 
 #import "TheatersTableViewController.h"
 #import "TheatersDataSource.h"
+#import "MoviesTableViewController.h"
 
 @interface TheatersTableViewController ()
 
@@ -126,10 +127,8 @@ static NSString *CellIdentifier = @"Cell";
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     Theater *theater = [self.dataSource theaterAtIndex:[indexPath row]];
-    
-    /*  Here is where I should load the next view with Movies at the theater
-    MoviesDetailedViewController *mController = [[MoviesDetailedViewController alloc] initWithMoive: movie];
-    [self.navigationController pushViewController:mController animated:YES]; */
+    MoviesTableViewController *mtCont = [[MoviesTableViewController alloc] initWithTheater: theater];
+    [self.navigationController pushViewController:mtCont animated:YES];
 }
 
 -(UITableViewCell *) theaterViewForIndex: (NSInteger) rowIndex withTableViewCell: (UITableViewCell *) cell
@@ -144,7 +143,6 @@ static NSString *CellIdentifier = @"Cell";
         NSArray *views = [iv subviews];
         for( UIView *v in views )
             [v removeFromSuperview];
-        iv.image = [theater imageForListEntry];
         UILabel *aLabel = (UILabel *) [view viewWithTag: LABEL_TAG];
         aLabel.attributedText = [theater descriptionForListEntry];
         return cell;
@@ -154,16 +152,10 @@ static NSString *CellIdentifier = @"Cell";
     CGRect viewFrame = CGRectMake(0, 0, bounds.size.width, THEATER_VIEW_HEIGHT);
     
     UIView *thisView = [[UIView alloc] initWithFrame: viewFrame];
-    
-    UIImage *img = [theater imageForListEntry];
-    CGRect imgFrame = CGRectMake(10, (viewFrame.size.height - IMAGE_HEIGHT) / 2, IMAGE_WIDTH, IMAGE_HEIGHT );
-    UIImageView *iView = [[UIImageView alloc] initWithImage: img];
-    iView.tag = IMAGE_VIEW_TAG;
-    iView.frame = imgFrame;
-    [thisView addSubview: iView];
+
     
     UILabel *theaterInfoLabel = [[UILabel alloc]
-                               initWithFrame:CGRectMake(IMAGE_WIDTH + 2 * 10, 5,
+                               initWithFrame:CGRectMake(20, 5,
                                                         viewFrame.size.width - IMAGE_WIDTH - 10,
                                                         viewFrame.size.height -5)];
     
@@ -177,48 +169,5 @@ static NSString *CellIdentifier = @"Cell";
     
     return cell;
 }
-
-
-/*
- // Override to support editing the table view.
- - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
- {
- if (editingStyle == UITableViewCellEditingStyleDelete) {
- // Delete the row from the data source
- [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
- }
- else if (editingStyle == UITableViewCellEditingStyleInsert) {
- // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
- }
- }
- */
-
-/*
- // Override to support rearranging the table view.
- - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
- {
- }
- */
-
-/*
- // Override to support conditional rearranging of the table view.
- - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
- {
- // Return NO if you do not want the item to be re-orderable.
- return YES;
- }
- */
-
-/*
- #pragma mark - Navigation
- 
- // In a story board-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
- {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- 
- */
 
 @end

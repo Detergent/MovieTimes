@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D048DB281AC5153200C05F75 /* MoviesAtTheater.m in Sources */ = {isa = PBXBuildFile; fileRef = D048DB231AC5153200C05F75 /* MoviesAtTheater.m */; };
+		D048DB291AC5153200C05F75 /* MoviesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D048DB251AC5153200C05F75 /* MoviesTableViewController.m */; };
+		D048DB2A1AC5153200C05F75 /* MoviesDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D048DB271AC5153200C05F75 /* MoviesDataSource.m */; };
+		D048DB301AC51AAB00C05F75 /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = D048DB2F1AC51AAB00C05F75 /* Movie.m */; };
+		D048DB331AC51D8F00C05F75 /* MoviesDetailedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D048DB321AC51D8F00C05F75 /* MoviesDetailedViewController.m */; };
+		D048DB361AC5204F00C05F75 /* FullMoviesDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D048DB351AC5204F00C05F75 /* FullMoviesDataSource.m */; };
 		D04C6A8E1AC3C83700A9F7B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D04C6A8D1AC3C83700A9F7B0 /* main.m */; };
 		D04C6A911AC3C83700A9F7B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D04C6A901AC3C83700A9F7B0 /* AppDelegate.m */; };
-		D04C6A941AC3C83700A9F7B0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D04C6A931AC3C83700A9F7B0 /* ViewController.m */; };
 		D04C6A971AC3C83700A9F7B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D04C6A951AC3C83700A9F7B0 /* Main.storyboard */; };
 		D04C6A991AC3C83700A9F7B0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D04C6A981AC3C83700A9F7B0 /* Images.xcassets */; };
 		D04C6A9C1AC3C83700A9F7B0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D04C6A9A1AC3C83700A9F7B0 /* LaunchScreen.xib */; };
@@ -34,13 +39,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D048DB221AC5153200C05F75 /* MoviesAtTheater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviesAtTheater.h; sourceTree = "<group>"; };
+		D048DB231AC5153200C05F75 /* MoviesAtTheater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviesAtTheater.m; sourceTree = "<group>"; };
+		D048DB241AC5153200C05F75 /* MoviesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviesTableViewController.h; sourceTree = "<group>"; };
+		D048DB251AC5153200C05F75 /* MoviesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviesTableViewController.m; sourceTree = "<group>"; };
+		D048DB261AC5153200C05F75 /* MoviesDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviesDataSource.h; sourceTree = "<group>"; };
+		D048DB271AC5153200C05F75 /* MoviesDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviesDataSource.m; sourceTree = "<group>"; };
+		D048DB2E1AC51AAB00C05F75 /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
+		D048DB2F1AC51AAB00C05F75 /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
+		D048DB311AC51D8F00C05F75 /* MoviesDetailedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviesDetailedViewController.h; sourceTree = "<group>"; };
+		D048DB321AC51D8F00C05F75 /* MoviesDetailedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviesDetailedViewController.m; sourceTree = "<group>"; };
+		D048DB341AC5203500C05F75 /* FullMoviesDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FullMoviesDataSource.h; sourceTree = "<group>"; };
+		D048DB351AC5204F00C05F75 /* FullMoviesDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullMoviesDataSource.m; sourceTree = "<group>"; };
 		D04C6A881AC3C83700A9F7B0 /* MovieTimes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieTimes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D04C6A8C1AC3C83700A9F7B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D04C6A8D1AC3C83700A9F7B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D04C6A8F1AC3C83700A9F7B0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D04C6A901AC3C83700A9F7B0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D04C6A921AC3C83700A9F7B0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D04C6A931AC3C83700A9F7B0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D04C6A961AC3C83700A9F7B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D04C6A981AC3C83700A9F7B0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D04C6A9B1AC3C83700A9F7B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -105,6 +120,7 @@
 			children = (
 				D04C6AB41AC3C8CB00A9F7B0 /* Theater.h */,
 				D04C6AB51AC3C8DD00A9F7B0 /* Theater.m */,
+				D04C6AB11AC3C87F00A9F7B0 /* DownloadAssistant.h */,
 				D04C6AB21AC3C87F00A9F7B0 /* DownloadAssistant.m */,
 				D04C6ABA1AC3C94B00A9F7B0 /* TheatersTableViewController.h */,
 				D04C6ABB1AC3C95500A9F7B0 /* TheatersTableViewController.m */,
@@ -112,11 +128,21 @@
 				D04C6AB71AC3C92000A9F7B0 /* TheatersDataSource.m */,
 				D04C6A8F1AC3C83700A9F7B0 /* AppDelegate.h */,
 				D04C6A901AC3C83700A9F7B0 /* AppDelegate.m */,
-				D04C6A921AC3C83700A9F7B0 /* ViewController.h */,
-				D04C6A931AC3C83700A9F7B0 /* ViewController.m */,
 				D04C6A951AC3C83700A9F7B0 /* Main.storyboard */,
 				D04C6A981AC3C83700A9F7B0 /* Images.xcassets */,
 				D04C6A9A1AC3C83700A9F7B0 /* LaunchScreen.xib */,
+				D048DB2E1AC51AAB00C05F75 /* Movie.h */,
+				D048DB2F1AC51AAB00C05F75 /* Movie.m */,
+				D048DB221AC5153200C05F75 /* MoviesAtTheater.h */,
+				D048DB231AC5153200C05F75 /* MoviesAtTheater.m */,
+				D048DB241AC5153200C05F75 /* MoviesTableViewController.h */,
+				D048DB251AC5153200C05F75 /* MoviesTableViewController.m */,
+				D048DB261AC5153200C05F75 /* MoviesDataSource.h */,
+				D048DB271AC5153200C05F75 /* MoviesDataSource.m */,
+				D048DB311AC51D8F00C05F75 /* MoviesDetailedViewController.h */,
+				D048DB321AC51D8F00C05F75 /* MoviesDetailedViewController.m */,
+				D048DB341AC5203500C05F75 /* FullMoviesDataSource.h */,
+				D048DB351AC5204F00C05F75 /* FullMoviesDataSource.m */,
 				D04C6A8B1AC3C83700A9F7B0 /* Supporting Files */,
 			);
 			path = MovieTimes;
@@ -154,7 +180,6 @@
 				D04C6AC81AC3CE7C00A9F7B0 /* UIKit.framework */,
 				D04C6AC61AC3CE7300A9F7B0 /* CoreGraphics.framework */,
 				D04C6AC41AC3CE6600A9F7B0 /* Foundation.framework */,
-				D04C6AB11AC3C87F00A9F7B0 /* DownloadAssistant.h */,
 			);
 			name = Frameworks;
 			path = MovieTimes;
@@ -260,13 +285,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D048DB301AC51AAB00C05F75 /* Movie.m in Sources */,
+				D048DB361AC5204F00C05F75 /* FullMoviesDataSource.m in Sources */,
 				D04C6AB31AC3C87F00A9F7B0 /* DownloadAssistant.m in Sources */,
 				D04C6ABC1AC3C95500A9F7B0 /* TheatersTableViewController.m in Sources */,
-				D04C6A941AC3C83700A9F7B0 /* ViewController.m in Sources */,
+				D048DB281AC5153200C05F75 /* MoviesAtTheater.m in Sources */,
+				D048DB291AC5153200C05F75 /* MoviesTableViewController.m in Sources */,
 				D04C6AB81AC3C92000A9F7B0 /* TheatersDataSource.m in Sources */,
 				D04C6A911AC3C83700A9F7B0 /* AppDelegate.m in Sources */,
+				D048DB2A1AC5153200C05F75 /* MoviesDataSource.m in Sources */,
 				D04C6A8E1AC3C83700A9F7B0 /* main.m in Sources */,
 				D04C6AB61AC3C8DD00A9F7B0 /* Theater.m in Sources */,
+				D048DB331AC51D8F00C05F75 /* MoviesDetailedViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +497,7 @@
 				D04C6AAD1AC3C83700A9F7B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D04C6AAE1AC3C83700A9F7B0 /* Build configuration list for PBXNativeTarget "MovieTimesTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +506,7 @@
 				D04C6AB01AC3C83700A9F7B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

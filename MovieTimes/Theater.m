@@ -49,20 +49,6 @@ enum { VIEW_HEIGHT = 90 };
 }
 
 
--(UIImage *)  imageForListEntry
-{
-    NSString *imageName = [self getValueForAttribute:@"smallImageURL"];
-    NSURL *url = [NSURL URLWithString: imageName];
-    NSData *iData = [NSData dataWithContentsOfURL: url];
-    UIImage *mImage = [UIImage imageWithData: iData];
-    return mImage;
-}
-
--(NSString *) imageNameForDetailedView
-{
-    return [self getValueForAttribute:@"largeImageURL"];
-}
-
 -(NSAttributedString *) compose: (NSString *) str withBoldPrefix: (NSString *) prefix
 {
     const CGFloat fontSize = 13;
@@ -119,11 +105,6 @@ enum { VIEW_HEIGHT = 90 };
     
     
     return [self compose:address withBoldPrefix:@"Address"];
-}
-
--(NSString *) htmlDescriptionForDetailedView
-{
-    return [self getValueForAttribute:@"description"];
 }
 
 -(void) print

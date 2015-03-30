@@ -118,20 +118,11 @@
     return [self.allTheaters count];
 }
 
--(NSString *) theaterTabBarTitle
-{
-    return @"Theaters";
-}
-
 -(NSString *) theatersBarButtonItemBackButtonTitle
 {
     return @"Theaters";
 }
 
--(NSString *) theatersTabBarImage
-{
-    return @"46-movie2.png";
-}
 
 @end
 

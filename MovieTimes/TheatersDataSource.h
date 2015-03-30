@@ -23,8 +23,6 @@
 -(NSMutableArray *) getAllTheaters;
 -(Theater *) theaterAtIndex: (NSInteger) idx;
 -(NSInteger) numberOfTheaters;
--(NSString *) theatersTabBarTitle;
--(NSString *) theatersTabBarImage;
 -(NSString *) theatersBarButtonItemBackButtonTitle;
 -(BOOL) deleteTheaterAtIndex: (NSInteger) idx;
 

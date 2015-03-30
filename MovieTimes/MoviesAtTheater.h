@@ -1,5 +1,5 @@
 //
-//  Theater.h
+//  MoviesAtTheater.h
 //  MovieTimes
 //
 //  Created by Justin Guarino on 3/25/15.
@@ -10,14 +10,16 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface Theater : NSObject
+@interface MoviesAtTheater : NSObject
 
 -(void) addValue: (NSString *) attrVal forAttribute: (NSString *) attrName;
 -(NSString *) getValueForAttribute: (NSString *) attr;
 -(void) print;
 
 -(NSString *) title;
--(NSAttributedString *) theaterNameForListEntry;
+-(NSString *) theater;
+-(NSAttributedString *) titleForListEntry;
+-(NSString *) htmlDescriptionForDetailedView;
 -(NSAttributedString *) descriptionForListEntry;
 -(id) initWithDictionary: (NSDictionary *) dictionary;
 
